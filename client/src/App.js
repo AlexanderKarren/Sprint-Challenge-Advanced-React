@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from 'react'
+import PlayerList from './components/PlayerList'
+import {useDarkMode} from './hooks/useDarkMode'
+import {ReactSVG} from 'react-svg'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export default function App() {
+  const [mode, setMode] = useDarkMode(false);
 
-export default App;
+  const toggleDarkMode = () => {
+    setMode(mode);
+  }
+
+  return (
+    <div className={mode ? "App" : "App dark-mode"}>
+      <h1>Women's World Cup Players<button onClick={toggleDarkMode}><ReactSVG src={mode ? "moon.svg" : "sun.svg"}/></button></h1>
+      <PlayerList mode={mode}/>
+    </div>
+  )
+}
