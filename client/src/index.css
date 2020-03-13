@@ -19,11 +19,11 @@ time, mark, audio, video {
   vertical-align: baseline;
   box-sizing:border-box;
   max-width:100%;
+  /* border:1px solid gray; */
 }
 
 body {
   font-family: "Arial", sans-serif;
-  background-color:#F0F8FF;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,4 +36,14 @@ h1 {
 
 h2 {
   font-size:1.5rem;
+}
+
+button {
+  border:0;
+  outline:none;
+  background-color:inherit;
+}
+
+button:hover {
+  cursor:pointer;
 }
