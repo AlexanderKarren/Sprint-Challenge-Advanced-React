@@ -14,7 +14,7 @@ export default function App() {
   return (
     <div className={mode ? "App" : "App dark-mode"}>
       <h1>Women's World Cup Players<button onClick={toggleDarkMode}><ReactSVG src={mode ? "moon.svg" : "sun.svg"}/></button></h1>
-      <PlayerList />
+      <PlayerList mode={mode}/>
     </div>
   )
 }

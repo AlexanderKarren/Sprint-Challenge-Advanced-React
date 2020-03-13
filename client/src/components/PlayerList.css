@@ -4,6 +4,12 @@
     justify-content:center;
 }
 
+.line-chart {
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
 .error {
     color:red;
 }

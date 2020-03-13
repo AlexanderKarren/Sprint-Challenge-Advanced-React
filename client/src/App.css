@@ -26,3 +26,7 @@
   cursor:pointer;
   fill:#FAFAD2;
 }
+
+.dark-mode .line-chart * {
+  background-color:black;
+}
