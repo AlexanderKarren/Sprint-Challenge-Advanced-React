@@ -7,6 +7,7 @@
 }
 
 .App > h1 {
+  margin-top:10px;
   display:flex;
   align-items:center;
 }
@@ -19,4 +20,9 @@
 
 .dark-mode .player-card {
   background-color:#2F4F4F;
+}
+
+.dark-mode button:hover {
+  cursor:pointer;
+  fill:#FAFAD2;
 }

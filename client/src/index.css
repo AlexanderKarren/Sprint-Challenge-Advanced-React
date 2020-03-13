@@ -42,8 +42,10 @@ button {
   border:0;
   outline:none;
   background-color:inherit;
+  transition:.5s;
 }
 
 button:hover {
   cursor:pointer;
+  fill:darkslategray;
 }
